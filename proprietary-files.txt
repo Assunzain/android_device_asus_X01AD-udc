@@ -2051,8 +2051,6 @@ vendor/etc/permissions/vendor.qti.hardware.factory.xml
 -vendor/lib64/vendor.qti.hardware.factory@1.1.so;MODULE=vendor.qti.hardware.factory@1.1_vendor
 
 # Fingerprint
--vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.X01AD
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.X01AD.rc
 -vendor/lib64/hw/cdfinger.fingerprint.default.so
 -vendor/lib64/hw/fingerprint.focaltech.default.so
 
