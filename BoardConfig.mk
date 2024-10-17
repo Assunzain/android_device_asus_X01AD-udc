@@ -43,6 +43,7 @@ BOARD_KERNEL_CMDLINE += androidboot.bootdevice=7824900.sdhci
 BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0x78af000
 BOARD_KERNEL_CMDLINE += androidboot.usbconfigfs=true
 BOARD_KERNEL_CMDLINE += loop.max_part=7
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_KERNEL_BASE := 0x80000000
@@ -160,9 +161,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Sepolicy
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
-BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+# include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+# SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+# BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # SVELTE
 MALLOC_SVELTE := true
