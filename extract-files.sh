@@ -33,9 +33,6 @@ function blob_fixup() {
         product/lib64/lib-imsvideocodec.so)
             grep -q "libgui_shim.so" "${2}" || ${PATCHELF} --add-needed "libgui_shim.so" "${2}"
             ;;
-    vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so)
-        "${PATCHELF_0_17_2}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
-        ;;
     esac
 }
 
