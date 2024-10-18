@@ -349,7 +349,9 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright_softomx_plugin.vendor
+
 
 # Power
 PRODUCT_PACKAGES += \
@@ -365,8 +367,9 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Protobuf
 PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-vendorcompat \
-    libprotobuf-cpp-lite-vendorcompat
+    libprotobuf-cpp-lite-vendorcompat \
+    libprotobuf-cpp-full-3.9.1-vendorcompat \
+    libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
@@ -403,6 +406,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     librmnetctl \
+    libion.vendor \
+    libnetutils.vendor \
+    libsqlite.vendor \
     libwpa_client \
     libxml2
 
@@ -415,7 +421,8 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service \
-    libsensorndkbridge
+    libsensorndkbridge \
+    libpower.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
