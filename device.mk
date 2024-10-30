@@ -368,10 +368,9 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Protobuf
 PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-vendorcompat:64 \
-    libprotobuf-cpp-lite-vendorcompat:64 \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full.so \
+    prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-lite.so
+
 
 # Public Libraries
 PRODUCT_COPY_FILES += \
