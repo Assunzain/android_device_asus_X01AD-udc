@@ -406,8 +406,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.2.vendor \
-    android.hardware.radio.deprecated@1.0 /
-    android.hardware.radio.config@1.1.vendor /
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.radio.config@1.1.vendor \
     android.hardware.radio.config@1.1
 
 PRODUCT_PACKAGES += \
