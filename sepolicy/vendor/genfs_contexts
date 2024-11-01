@@ -10,3 +10,6 @@ genfscon debugfs /rmt_storage	u:object_r:debugfs_rmt:s0
 
 # Touchscreen
 genfscon proc /tpd_gesture               u:object_r:proc_tpd_gesture:s0
+
+# Healt check 
+genfscon sysfs /module/subsystem_restart                                                                                               u:object_r:sysfs_ssr:s0
