@@ -34,10 +34,9 @@
 -vendor/lib64/com.qualcomm.qti.ant@1.0.so;MODULE=com.qualcomm.qti.ant@1.0_vendor
 -vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
-# Porotbuf
--vendor/lib64/libprotobuf-cpp-full.so
--vendor/lib64/libprotobuf-cpp-lite.so
--vendor/lib/libprotobuf-cpp-lite.so
+# libutils
+-vendor/lib64/libutils.so
+-vendor/lib/libutils.so
 
 
 # Alarm
