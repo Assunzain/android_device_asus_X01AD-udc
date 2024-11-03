@@ -339,6 +339,11 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.1.vendor \
     android.hardware.neuralnetworks@1.0.vendor
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-vendorcompat:64 \
+    libprotobuf-cpp-lite-vendorcompat:64
+
 # OMX
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
