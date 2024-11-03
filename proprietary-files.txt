@@ -34,10 +34,6 @@
 -vendor/lib64/com.qualcomm.qti.ant@1.0.so;MODULE=com.qualcomm.qti.ant@1.0_vendor
 -vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
-# libutils
--vendor/lib64/libutils.so
--vendor/lib/libutils.so
-
 
 # Alarm
 product/framework/vendor.qti.hardware.alarm-V1.0-java.jar
