@@ -35,7 +35,6 @@
 -vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
 # Porotbuf
--vendor/lib/libprotobuf-cpp-full.so
 -vendor/lib64/libprotobuf-cpp-full.so
 -vendor/lib64/libprotobuf-cpp-lite.so
 -vendor/lib/libprotobuf-cpp-lite.so
