@@ -345,8 +345,8 @@ PRODUCT_PACKAGES += \
 
 # Protobuf
 PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-vendorcompat:64 \
-    libprotobuf-cpp-lite-vendorcompat:64
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite-vendorcompat
 
 # OMX
 PRODUCT_PACKAGES += \
