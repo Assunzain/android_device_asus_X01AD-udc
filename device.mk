@@ -413,6 +413,10 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.secure_element@1.2.vendor
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libutils.vendor
+
 PRODUCT_PACKAGES += \
     librmnetctl \
     libion.vendor \
