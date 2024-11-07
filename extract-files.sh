@@ -37,7 +37,7 @@ function blob_fixup() {
             grep -q "libutils-v33.so" "${2}" || "${PATCHELF}" --add-needed "libutils-v33.so" "${2}"
             ;;
         product/lib64/libimsmedia_jni.so)
-            "${PATCHELF}" --add-needed libutils.so "${2}"
+            grep -q "libutils.so" "${2}" || "${PATCHELF}" --add-needed "libutils.so" "${2}"
             ;;
     esac
 }
